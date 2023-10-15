@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@mipmap/peakpx"
+    >
+
+    <ImageView
+        android:id="@+id/backgroundregister"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_centerInParent="true"
+        android:src="@drawable/shape_element" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="264dp"
+        android:layout_height="57dp"
+        android:layout_alignTop="@id/backgroundregister"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        app:srcCompat="@drawable/logo" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/input1"
+        style="@style/CustomTextInputStyle"
+        android:layout_below="@id/imageView2"
+        android:layout_marginTop="23dp"
+        android:text="Name" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/input2"
+        style="@style/CustomTextInputStyle"
+        android:layout_below="@+id/input1"
+        android:layout_marginTop="15dp"
+        android:text="Email" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/input3"
+        style="@style/CustomTextInputStyle"
+        android:layout_below="@+id/input2"
+        android:layout_marginTop="15dp"
+        android:text="Phone" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/input4"
+        style="@style/CustomTextInputStyle"
+        android:layout_below="@+id/input3"
+        android:layout_marginTop="15dp"
+        android:text="Password" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/input4"
+        android:layout_alignEnd="@id/input2"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="6dp"
+        android:textSize="13dp"
+        android:text="Already has a Account? Sign in now!"
+        android:textColor="@color/white"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <Button
+        style="@style/CustomButton"
+        android:id="@+id/btn1"
+        android:layout_below="@id/input4"
+        android:layout_marginTop="44dp"
+        android:backgroundTint="@color/white"
+        android:text="Sign up"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/btn2"
+        style="@style/CustomButton"
+        android:layout_below="@id/btn1"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="#3b5998"
+        android:text="Sign up with Facebook"
+        android:textColor="@color/white" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="31dp"
+        android:layout_height="33dp"
+        android:layout_alignStart="@+id/btn2"
+        android:layout_alignTop="@+id/btn2"
+        android:layout_alignEnd="@+id/btn2"
+        android:layout_alignBottom="@+id/btn2"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="250dp"
+        android:layout_marginBottom="8dp"
+        app:srcCompat="@drawable/facebook" />
+
+    <Button
+        android:id="@+id/btn3"
+        style="@style/CustomButton"
+        android:layout_below="@id/btn2"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/white"
+        android:text="Sign up with Google"
+        android:textColor="@color/black" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="26dp"
+        android:layout_height="35dp"
+        android:layout_alignStart="@+id/btn3"
+        android:layout_alignTop="@+id/btn3"
+        android:layout_alignBottom="@+id/btn3"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="7dp"
+        app:srcCompat="@drawable/google" />
+
+
+</RelativeLayout>
